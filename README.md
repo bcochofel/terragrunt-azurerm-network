@@ -1,11 +1,11 @@
-# azurerm-terragrunt-network
+# terragrunt-azurerm-network
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![GitHub license](https://img.shields.io/github/license/bcochofel/azurerm-terragrunt-network.svg)](https://github.com/bcochofel/azurerm-terragrunt-network/blob/master/LICENSE)
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/bcochofel/azurerm-terragrunt-network)](https://github.com/bcochofel/azurerm-terragrunt-network/tags)
-[![GitHub issues](https://img.shields.io/github/issues/bcochofel/azurerm-terragrunt-network.svg)](https://github.com/bcochofel/azurerm-terragrunt-network/issues/)
-[![GitHub forks](https://img.shields.io/github/forks/bcochofel/azurerm-terragrunt-network.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/bcochofel/azurerm-terragrunt-network/network/)
-[![GitHub stars](https://img.shields.io/github/stars/bcochofel/azurerm-terragrunt-network.svg?style=social&label=Star&maxAge=2592000)](https://github.com/bcochofel/azurerm-terragrunt-network/stargazers/)
+[![GitHub license](https://img.shields.io/github/license/bcochofel/terragrunt-azurerm-network.svg)](https://github.com/bcochofel/terragrunt-azurerm-network/blob/master/LICENSE)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/bcochofel/terragrunt-azurerm-network)](https://github.com/bcochofel/terragrunt-azurerm-network/tags)
+[![GitHub issues](https://img.shields.io/github/issues/bcochofel/terragrunt-azurerm-network.svg)](https://github.com/bcochofel/terragrunt-azurerm-network/issues/)
+[![GitHub forks](https://img.shields.io/github/forks/bcochofel/terragrunt-azurerm-network.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/bcochofel/terragrunt-azurerm-network/network/)
+[![GitHub stars](https://img.shields.io/github/stars/bcochofel/terragrunt-azurerm-network.svg?style=social&label=Star&maxAge=2592000)](https://github.com/bcochofel/terragrunt-azurerm-network/stargazers/)
 
 This repository implements Multi Environment Multi Region Azure Network using Terragrunt.
 
