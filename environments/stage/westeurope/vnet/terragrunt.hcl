@@ -12,7 +12,7 @@ locals {
 }
 
 terraform {
-  source = "github.com/bcochofel/terraform-azurerm-modules//modules/network?ref=v1.5.0"
+  source = "github.com/bcochofel/terraform-azurerm-modules//modules/vnet?ref=v1.5.0"
 }
 
 # Include all settings from the root terragrunt.hcl file

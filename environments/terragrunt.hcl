@@ -37,10 +37,10 @@ remote_state {
 }
 
 terraform {
-  before_hook "env" {
-    commands = ["validate", "plan"]
-    execute  = ["env"]
-  }
+  #  before_hook "env" {
+  #    commands = ["validate", "plan"]
+  #    execute  = ["env"]
+  #  }
 
   after_hook "tflint" {
     commands = ["validate"]

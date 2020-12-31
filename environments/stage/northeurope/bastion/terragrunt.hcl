@@ -21,11 +21,11 @@ include {
 }
 
 dependencies {
-  paths = ["../network"]
+  paths = ["../vnet"]
 }
 
-dependency "network" {
-  config_path = "../network"
+dependency "vnet" {
+  config_path = "../vnet"
 
   # Configure mock outputs for the `validate` command that are returned when there are no outputs available (e.g the
   # module hasn't been applied yet.
@@ -44,8 +44,8 @@ inputs = {
     Environment = "${local.env}"
   }
 
-  vnet_name = dependency.network.outputs.vnet_name
-  vnet_rg   = dependency.network.outputs.rg_name
+  vnet_name = dependency.vnet.outputs.vnet_name
+  vnet_rg   = dependency.vnet.outputs.rg_name
 
   snet_name          = "snet-bastion-${local.env}-${local.region_shortname}-001"
   snet_addr_prefixes = "10.0.1.0/24"
