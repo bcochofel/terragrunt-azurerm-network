@@ -1,0 +1,33 @@
+name: $(BuildDefinitionName)_$(date:yyyyMMdd)$(rev:.r)
+
+trigger: none
+pr:
+  branches:
+    include:
+      - '*'
+  paths:
+    include:
+      - environments/stage/northeurope
+
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: bcochofel/azuredevops-pipeline-templates
+      ref: refs/heads/main
+      endpoint: GitHubConnection
+
+stages:
+  - template: terraform/terragrunt.yml@templates
+    parameters:
+      environment: sandbox
+      validationOnly: true
+      varGroups:
+        - terraform-configuration
+        - terraform-configuration-secrets
+        - demolab-configuration
+      workingDirectory: environments/stage/northeurope
+      environmentVars:
+        SSH_PUBLIC_KEY: $(SSH_PUBLIC_KEY)
+      terragruntRunAll: true
+      prComments: false
